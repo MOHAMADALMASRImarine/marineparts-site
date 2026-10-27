@@ -204,3 +204,48 @@ body {
   width: 300px;
   padding: 10px;
   border-radius
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 1.5em;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search-bar input {
+    width: 90%;
+  }
+
+  .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .trust {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .categories .grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
